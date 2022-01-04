@@ -1,0 +1,15 @@
+
+  <h3>Adding Divs on Scrolling Module</h3>
+
+<div id="outerDiv">
+    <div id="innerDiv" *ngFor="let container of divContainers">
+
+
+   <h1 style="margin-left:65px">Div.no. {{container+1}}  </h1>  
+    
+    <button class="btn btn-info btn1" (click)="ShowAlert(container)" >Button</button>
+    
+    
+    </div>
+    <br>
+  </div>

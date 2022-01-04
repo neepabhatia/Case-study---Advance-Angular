@@ -1,0 +1,60 @@
+<h3>Product List</h3>
+<div style="margin:15px;margin-left: 50px;">
+  <mat-button-toggle-group #group="matButtonToggleGroup" (click)="layoutView(group.value)">
+    <mat-button-toggle value="grid" aria-label="Text align left">
+      <mat-icon>grid_on</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="list" aria-label="Text align center">
+      <mat-icon>list</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <!-- drop down ------- -->
+  <mat-form-field appearance="outline" style="margin-left: 55px;">
+    <mat-select placeholder="Sort By Price" (selectionChange)="changeView($event.value)">
+      <mat-option *ngFor="let view of filterTypes" [value]="view">
+        {{view}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<!--grid view  -->
+<div *ngIf="viewLayout == 'grid'" class="gridView">
+
+  <div *ngFor="let product of productArray">
+
+    <div class="product">
+      <span class="product__price">${{product.Price}}</span>
+      <img class="product__image" src="{{product.Image}}">
+      <h1 class="product__title">{{product.productName}}</h1>
+      <hr />
+      <ul>
+        <li style="  display: inline-block;">Color : <div style="  display: inline-block;" class='box' [style.background-color]="product.Color"></div>{{product.Color}}</li>
+        <li>Popularity : {{product.Popularity}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--list view  -->
+
+<div *ngIf="viewLayout == 'list'" class="listView">
+
+  <div *ngFor="let product of productArray">
+    <mat-card class="example-card">
+      <mat-card-title-group>
+        <mat-card-title>{{product.productName}}</mat-card-title>
+        <mat-card-subtitle class="product__price">${{product.Price}}</mat-card-subtitle>
+        <img mat-card-sm-image src="{{product.Image}}">
+      </mat-card-title-group>
+      <mat-card-content>
+        <ul>
+          <li>Color : {{product.Color}}</li>
+          <li>Popularity : {{product.Popularity}}</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+</div>

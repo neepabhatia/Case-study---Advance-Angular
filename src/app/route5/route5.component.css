@@ -1,0 +1,41 @@
+table {
+    width: 100%;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+  
+  #students {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #students td, #students th {
+    border: 1px solid rgb(227, 250, 249);
+    padding: 8px;
+  }
+  
+  #students tr:nth-child(even){background-color: #def7f5;}
+  
+  #students tr:hover {background-color: rgb(194, 221, 217);}
+  
+  #students th {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #80dadd;
+    color: white;
+  }
+  .loading{
+    padding-left: 43%;
+    padding-top: 20px;
+    font-weight: 500;
+  }
+  h3{
+    margin-left: 35%;
+    margin-top: 20px;
+    font-weight: 500;
+  }

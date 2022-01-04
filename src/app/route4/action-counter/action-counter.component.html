@@ -1,0 +1,25 @@
+<div class="m-2" style="display: flex; justify-content: space-between; width: 60%;">
+    <div style="align-items: flex-start;">
+        <ul *ngFor="let dataObj of requiredData" >
+            <li>{{dataObj.actionType}} at {{dataObj.date | date : 'd -M-yy, h:mm:ss a'	}}</li>
+        </ul>
+    </div>
+    <div style="align-items: flex-start;">
+
+        <div style="font-size: 20px;position: relative;top: 15%;bottom: 15%;" class="row">
+        
+            <div style="text-align: center;" class="col-md-6">
+                <div style="text-align: center;">{{counterStart}}</div>
+                <div>Started</div>
+            </div>
+            <div style="text-align: center;" class="col-md-6">
+                <div style="text-align: center;"> {{counterPause}}</div>
+                <div>Paused</div>
+            </div>
+         
+        
+        
+        </div>
+     
+    </div>
+</div>

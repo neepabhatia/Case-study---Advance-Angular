@@ -1,0 +1,16 @@
+
+<div style="margin:10px">
+
+
+       <div style="font-size:20px;" class="mb-2">Enter Timer Limit</div>
+      <input #f class="form-control mb-1" placeholder="Please Enter Number to Start Timer" [(ngModel)]="counter1" type="number" />
+   
+
+    
+    <button class="btn btn-primary" (click)="startorpause()" >
+            {{startCheckFlag? 'Stop':'Start'}}
+        </button>
+  
+      <button  class="btn btn-info"  (click)="resetvalues()" style="float: right; color: white;">Reset</button>
+    </div>
+   

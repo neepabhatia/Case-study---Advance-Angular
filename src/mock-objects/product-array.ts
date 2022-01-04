@@ -1,0 +1,47 @@
+import { Product } from "src/models/product";
+
+const imageUrl="assets/img/";
+
+export var productArray: Product[] =
+    [{ "productName": "Sauerkraut", "Price": "1.47", "Color": "Indigo", "Popularity": 1, "Image": `${imageUrl}/Sauerkraut.jpg` },
+    { "productName": "Bar Mix - Pina Colada, 355 Ml", "Price": "3.37", "Color": "Violet", "Popularity": 2, "Image":  `${imageUrl}/pinacola.jpg` },
+    { "productName": "Wine - Jackson Triggs Okonagan", "Price": "2.95", "Color": "Green", "Popularity": 3, "Image": `${imageUrl}/Jackson.jpg` },
+    { "productName": "Wine - Two Oceans Cabernet", "Price": "7.38", "Color": "Mauv", "Popularity": 4, "Image": `${imageUrl}/two-oceans.jpg` },
+    { "productName": "Broom Handle", "Price": "2.12", "Color": "Mauv", "Popularity": 5, "Image": `${imageUrl}/Broom Handle.jpg` },
+    { "productName": "Crab - Imitation Flakes", "Price": "7.94", "Color": "Goldenrod", "Popularity": 6, "Image": `${imageUrl}/CrabImitation-Flakes.jpg` },
+    { "productName": "Tomatoes - Vine Ripe, Yellow", "Price": "0.05", "Color": "Mauv", "Popularity": 7, "Image": `${imageUrl}/TomatoesVineRipe.jpg` },
+    { "productName": "Wine - Duboeuf Beaujolais", "Price": "0.56", "Color": "Teal", "Popularity": 8, "Image": `${imageUrl}/WineDuboeufBeaujolais.jpg` },
+    { "productName": "Oil - Grapeseed Oil", "Price": "0.13", "Color": "Violet", "Popularity": 9, "Image": `${imageUrl}/OilGrapeseedOil.jpg` },
+    { "productName": "Brandy Cherry - Mcguinness", "Price": "3.80", "Color": "Goldenrod", "Popularity": 10, "Image": `${imageUrl}/BrandyCherryMcguinness.jpg` },
+    { "productName": "Rabbit - Whole", "Price": "2.48", "Color": "Teal", "Popularity": 11, "Image": `${imageUrl}/RabbitWhole.jpg` },
+    { "productName": "Ginger - Ground", "Price": "3.82", "Color": "Fuscia", "Popularity": 12, "Image": `${imageUrl}/GingerGround.jpg` },
+    { "productName": "Cheese - Romano, Grated", "Price": "0.32", "Color": "Orange", "Popularity": 13, "Image": `${imageUrl}/CheeseRomanoGrated.jpg` },
+    { "productName": "Table Cloth 54x54 Colour", "Price": "1.19", "Color": "Fuscia", "Popularity": 14, "Image": `${imageUrl}/TableCloth54x54Colour.jpg` },
+    { "productName": "Wine - White, Ej Gallo", "Price": "1.66", "Color": "Red", "Popularity": 15, "Image": `${imageUrl}/WineEjGallo.jpg` },
+    { "productName": "Pork - Loin, Bone - In", "Price": "4.99", "Color": "Crimson", "Popularity": 16, "Image": `${imageUrl}/PorkLoinBoneIn.jpg` },
+    { "productName": "Sage - Fresh", "Price": "0.48", "Color": "Turquoise", "Popularity": 17, "Image": `${imageUrl}/SageFresh.jpg` },
+    { "productName": "Sauce Tomato Pouch", "Price": "9.27", "Color": "Fuscia", "Popularity": 18, "Image": `${imageUrl}/SauceTomatoPouch.jpg` },
+    { "productName": "Wine - White, Concha Y Toro", "Price": "0.34", "Color": "Maroon", "Popularity": 19, "Image": `${imageUrl}/WineWhiteConchaYToro.jpg` },
+    { "productName": "Yoplait Drink", "Price": "6.88", "Color": "Crimson", "Popularity": 20, "Image": `${imageUrl}/YoplaitDrink.jpg` },
+    { "productName": "Cheese - Mix", "Price": "5.23", "Color": "Teal", "Popularity": 21, "Image": `${imageUrl}/CheeseMix.jpg` },
+    { "productName": "Pepsi - Diet, 355 Ml", "Price": "5.64", "Color": "Mauv", "Popularity": 22, "Image": `${imageUrl}/Pepsi-Diet355Ml.jpg` },
+    { "productName": "Island Oasis - Mango Daiquiri", "Price": "7.10", "Color": "Red", "Popularity": 23, "Image": `${imageUrl}/IslandOasisMangoDaiquiri.jpg` },
+    { "productName": "Seedlings - Buckwheat, Organic", "Price": "2.69", "Color": "Crimson", "Popularity": 24, "Image": `${imageUrl}/SeedlingsBuckwheat.jpg` },
+    { "productName": "Lettuce Romaine Chopped", "Price": "1.66", "Color": "Purple", "Popularity": 25, "Image": `${imageUrl}/LettuceRomaineChopped.jpg` },
+    { "productName": "Hipnotiq Liquor", "Price": "9.19", "Color": "Fuscia", "Popularity": 26, "Image": `${imageUrl}/HipnotiqLiquor.jpg` },
+    { "productName": "Red Currant Jelly", "Price": "4.99", "Color": "Teal", "Popularity": 27, "Image": `${imageUrl}/RedCurrantJelly.jpg` },
+    { "productName": "Veal - Inside Round / Top, Lean", "Price": "3.23", "Color": "Violet", "Popularity": 28, "Image": `${imageUrl}/VealInsideRound.jpg` },
+    { "productName": "Compound - Pear", "Price": "3.49", "Color": "Violet", "Popularity": 29, "Image": `${imageUrl}/CompoundPear.jpg` },
+    { "productName": "Red Currants", "Price": "2.04", "Color": "Violet", "Popularity": 30, "Image": `${imageUrl}/RedCurrants.jpg` },
+    { "productName": "Pastry - Baked Cinnamon Stick", "Price": "3.32", "Color": "Turquoise", "Popularity": 31, "Image": `${imageUrl}/PastryBakedCinnamon.jpg` },
+    { "productName": "Yogurt - Cherry, 175 Gr", "Price": "5.31", "Color": "Goldenrod", "Popularity": 32, "Image": `${imageUrl}/YogurtCherry175Gr.jpg` },
+    { "productName": "Vanilla Beans", "Price": "5.10", "Color": "Maroon", "Popularity": 33, "Image": `${imageUrl}/VanillaBeans.jpg` },
+    { "productName": "Pork - Ground", "Price": "4.95", "Color": "Aquamarine", "Popularity": 34, "Image": `${imageUrl}/PorkGround.jpg` },
+    { "productName": "Island Oasis - Magarita Mix", "Price": "0.96", "Color": "Orange", "Popularity": 36, "Image": `${imageUrl}/OasisMagaritaMix.jpg` },
+    { "productName": "Currants", "Price": "0.79", "Color": "Aquamarine", "Popularity": 37, "Image": `${imageUrl}/Currants.jpg` },
+    { "productName": "Tomatillo", "Price": "9.26", "Color": "Maroon", "Popularity": 38, "Image": `${imageUrl}/Tomatillo.jpg` },
+    { "productName": "Shrimp - Black Tiger 16/20", "Price": "6.77", "Color": "Green", "Popularity": 39, "Image": `${imageUrl}/BlackTigerShrimp.jpg` },
+    { "productName": "Ecolab - Lime - A - Way 4/4 L", "Price": "1.84", "Color": "Green", "Popularity": 40, "Image": `${imageUrl}/Ecolab.jpg` },
+    { "productName": "Wine - White, Ej Gallo", "Price": "1.66", "Color": "Red", "Popularity": 15, "Image": `${imageUrl}/WineEjGallo.jpg` }
+
+]

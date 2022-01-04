@@ -1,0 +1,26 @@
+.row{
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.inline-box{
+    display: flex;
+    margin-left: 10px;
+    max-width: 98%;
+    margin-top: 10px;
+
+}
+.inline-box1{
+    display: flex;
+    margin-left: 10px;
+    max-width: 98%;
+    margin-top: 2px;
+
+}
+.child-row{
+    flex-grow: 1;
+}
+h3{
+    margin-left: 30%;
+    margin-top: 20px;
+    font-weight: 500;
+  }
